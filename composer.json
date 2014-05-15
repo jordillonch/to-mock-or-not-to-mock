@@ -1,0 +1,26 @@
+{
+    "name": "akamon/to-mock-or-not-to-mock",
+    "description": "Comparison of multiples mock libraries",
+    "authors": [
+        {
+            "name": "Jordi Llonch",
+            "email": "jordi.llonch@gmail.com"
+        },
+        {
+            "name": "Eloi Poch",
+            "email": "eloi.poch@gmail.com"
+        }
+    ],
+    "require": {
+
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Akamon\\ToMockOrNot\\": "src",
+            "Akamon\\ToMockOrNot\\Test\\": "tests"
+        }
+    }
+}
