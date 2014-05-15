@@ -30,5 +30,8 @@ class PublisherPhakeTest extends PHPUnit_Framework_TestCase
 
         $publisher = new Publisher($serializer, $sender);
         $this->assertTrue($publisher->send($message));
+
+        Phake::verify($serializer, Phake::times(1))->serialize($message);
+        Phake::verify($sender, Phake::times(1))->send($serializedMessage);
     }
 }
